@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cart" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <title>Cart</title>
+</head>
+<body>
+    <div class="container-outer">
+        <div class="container-inner">
+            <table class="cart">
+                <thead class="cart-header">
+                    <tr class="cart-header__row">
+                        <th class="cart-header__row-cell">Название</th>
+                        <th class="cart-header__row-cell">Стоимость</th>
+                        <th class="cart-header__row-cell">Количество</th>
+                        <th class="cart-header__row-cell">Сумма</th>
+                    </tr>
+                </thead>
+                <tbody class="cart-body">
+                    <tr class="cart-body__row">
+                        <td class="cart-body__row-cell">Футболка</td>
+                        <td class="cart-body__row-cell price">500 руб</td>
+                        <td class="cart-body__row-cell count"">
+                            <div class="input-group">
+                                <button class="input-group__btn btn btn--minus">-</button>
+                                <input type="number" value="1" data-price="500" class="input-group__input input"></input>
+                                <button class="input-group__btn btn btn--plus">+</button>
+                            </div>
+                        </td>
+                        <td class="cart-body__row-cell subtotal">500 руб</td>
+                    </tr>
+                    <tr class="cart-body__row">
+                        <td class="cart-body__row-cell">Рубашка</td>
+                        <td class="cart-body__row-cell price">1000 руб</td>
+                        <td class="cart-body__row-cell count"">
+                            <div class="input-group">
+                                <button class="input-group__btn btn btn--minus">-</button>
+                                <input type="number" value="2" data-price="1000" class="input-group__input input"></input>
+                                <button class="input-group__btn btn btn--plus">+</button>
+                            </div>
+                        </td>
+                        <td class="cart-body__row-cell subtotal">2000 руб</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="total-price">Итого: <span class="total-price__value"></span> руб</div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
